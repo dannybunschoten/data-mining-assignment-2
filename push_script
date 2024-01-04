@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pip3 install nbconvert
+python3 -m nbconvert --clear-output *.ipynb **/*.ipynb
+
+git add .
+git commit -m "pushed with script"
+git push origin main
+
+echo 'pushed to main'
